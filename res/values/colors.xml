@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionBarColorStart">#1887CC</color>
+    <color name="actionBarColorEnd">#1E6896</color>
+    <color name="mainBackgroundColorStart">#1887CC</color>
+    <color name="mainBackgroundColorEnd">#1E6896</color>
+    <color name="mainLayoutBackground">#D8FFFFFF</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="nonButtonTextColor">#000000</color>
+    <color name="titlebarTextColor">@color/buttonTextColor</color>
+    <color name="buttonClickedColor">#ABCCE0</color>
+    <color name="buttonDisabledColor">#9E9E9E</color>
+    
+</resources>

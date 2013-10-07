@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="fill"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+   <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_layout_shape"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/startText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:text="@string/start" />
+
+            <Spinner
+                android:id="@+id/startSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/endText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:text="@string/end" />
+
+            <Spinner
+                android:id="@+id/endSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.example.trains.buttons.SelectDateButton
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColor="@color/buttonTextColor"
+                android:textSize="@dimen/buttonTextSize"/>
+
+            <com.example.trains.buttons.SelectTimeButton
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:ems="10" 
+                android:padding="10dp"
+                android:textColor="@color/buttonTextColor"
+                android:textSize="@dimen/buttonTextSize" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/returnCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/returnCheckBox" 
+            android:textColor="@color/nonButtonTextColor"
+            android:textSize="@dimen/buttonTextSize"
+            android:onClick="onReturnCheckboxClicked" />
+
+        <LinearLayout
+            android:id="@+id/returnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.example.trains.buttons.SelectReturnDateButton
+                android:id="@+id/dateReturnText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:ems="10"
+                android:textColor="@color/buttonTextColor"
+                android:textSize="@dimen/buttonTextSize" />
+
+
+            <com.example.trains.buttons.SelectReturnTimeButton
+                android:id="@+id/timeReturnText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:ems="10" 
+                android:textColor="@color/buttonTextColor"
+                android:textSize="@dimen/buttonTextSize" />
+
+        </LinearLayout>
+
+        <com.example.trains.buttons.GoButton
+            android:id="@+id/goButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"
+            android:text="@string/go"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
